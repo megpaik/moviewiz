@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Arimo');
+
+:root {
+  --primary: #3E2F5B;
+  --secondary: #261132;
+  --accent: #E6AF2E;
+  --highlight: #e0e2db;
+  --shadow: #191716;
+}
+
+html, body {
+  height: 100%;
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+  background-color: var(--secondary);
+  color: var(--highlight);
+}
+.flex {
+  display: flex;
+}
+.flexcol {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index-container {
+  height: 100%;
+}
+.header {
+  font-family: 'Poiret One', cursive;
+  font-size: 6em;
+}
+#blurb {
+  letter-spacing: 0.1em;
+}
+.login-container {
+  font-family: 'Arimo', sans-serif;
+  width:40%;
+  padding-top: 2em;
+}
+.login {
+  background: rgba(224, 226, 219, 0.5);
+  border: none;
+  padding: 0.7em 2em;
+  margin: 0.5em;
+  color: var(--highlight);
+  font-family: 'Arimo', sans-serif;
+  border-radius: 1em;
+  width: 60%;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--highlight);
+  font-family: 'Arimo', sans-serif;}
+.btn {
+  border: none;
+  background-color: var(--accent);
+  border-radius: 1em;
+  padding: 0.7em 2em;
+  margin: 0.5em;
+  color: var(--highlight);
+  width: 70%;
+  margin-top: 1em;
+  font-family: 'Arimo', sans-serif;
+  cursor: pointer;
+}
+input:focus, button:focus {
+  outline: 0;
+}

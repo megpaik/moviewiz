@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var login = require('./routes/login');
+var browse = require('./routes/browse');
+var search = require('./routes/search');
 
 app.engine('html', require('ejs').__express);
 app.set('view engine', 'html');
@@ -16,7 +17,8 @@ app.get('/', function (req, res) {
 });
 
 // mount routers here
-app.use('/', login);
+app.use('/', browse);
+app.use('/', search);
 
 
 app.listen(app.get('port'), function () {
