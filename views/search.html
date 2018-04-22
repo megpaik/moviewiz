@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <title>moviewiz</title>
+  <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css" />
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   </head>
 <body>
-  <div class="container">
-    <div class="header">moviewiz</div>
-    <form action="/search">
-      <input class="searchbar" type="text"/>
-      <input type="submit" Value="Search">
-    </form>
-    <div class="browse-body">
+    <div class="container">
+      <div class="nav flex flexrow">
+        <div class="logo">moviewiz</div>
+        <form action="/search">
+          <input class="searchbar" type="text"/>
+          <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    <div class="search-body">
       This is the search page. This should render the results of the naive search
     </div>
   </div>

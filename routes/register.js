@@ -9,7 +9,7 @@ router.get('/register', (req, res) => {
 router.post('/register', (req, res) => {
   User.addUser(req.body.username, req.body.password, (err) => {
     if (err) res.send('Error: ' + err);
-    else res.send('Welcome to moviewiz, ' + req.body.username);
+    else res.render('browse');
   });
 });
 

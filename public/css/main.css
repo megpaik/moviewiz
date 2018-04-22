@@ -63,6 +63,31 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Arimo', sans-serif;
   cursor: pointer;
 }
+.search-btn {
+  border:none;
+  background-color: rgba(0,0,0,0);
+  color: var(--highlight);
+  font-size: 1.3em;
+}
 input:focus, button:focus {
   outline: 0;
+}
+.nav {
+  width: 100%;
+  justify-content: space-between;
+}
+.searchbar {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-bottom: var(--highlight) 0.1em solid;
+  color: var(--highlight);
+  margin: 0.8em;
+  margin-right: 0em;
+  font-family: 'Arimo', sans-serif;
+}
+.logo {
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 0.5em;
 }

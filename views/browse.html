@@ -3,11 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <title>moviewiz</title>
+  <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css" />
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   </head>
 <body>
   <div class="container">
-    <div class="header">moviewiz</div>
+    <div class="nav flex flexrow">
+      <div class="logo">moviewiz</div>
+      <form action="/search">
+        <select>
+            <option value="title">Title</option>
+            <option value="director">Director</option>
+            <option value="actor">Actor</option>
+            <option value="year">Year</option>
+          </select>
+        <input class="searchbar" type="text"/>
+        <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
+      </form>
+      
+    </div>
     <div class="browse-body">
       Should populate with movies - top 10 or something
     </div>

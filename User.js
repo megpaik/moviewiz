@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/userDB');
+mongoose.connect('mongodb://admin:admin@ds253889.mlab.com:53889/moviewiz');
 var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt');
 
