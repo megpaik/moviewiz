@@ -5,3 +5,10 @@ LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/megpaik/cis450/RJ/
 
 CREATE(movie:Movie {movieid: toInteger(MLrate.movielensid),moviename: toString(MLrate.moviename)}),(user:User {username: toString(MLrate.username)}),(rating: Rating {rated: toFloat(MLrate.rating)})
 CREATE (movie)-[:WATCHED_BY]->(user)-[:Rated]->(rating);
+
+
+MATCH (m:Movie {moviename:"______"})-[:WATCHED_BY]->(user)-[:Rated]->(rating) WHERE rating.rated >= 4,
+Return user.username AS Users_Like_You
+
+
+MATCH (m:Movie)-[:WATCHED_BY]->(user {username: "_____"})-[:Rated]->(rating) WHERE rating.rated >= 4 AND NOT (m.moviename = "____") RETURN m.moviename AS Movie_Recommendations ORDER BY rating.rated DESC LIMIT 10
