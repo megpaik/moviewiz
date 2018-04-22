@@ -1,14 +1,16 @@
-LOADING ML RATING DATA INTO NEO4J::
-
+---------------------------------\\*Input this query into neo4j console to import movie ratings from 5,328 users (subset of ML_Ratings dataset)
+------------------------------------\\*Schema: movielensid, moviename, username(equivalent to userid), rating
 USING PERIODIC COMMIT
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/megpaik/cis450/RJ/ML_RATINGS.csv?token=AVgcnk73SFmTFqExdXfeoA0wDiq5Mg4Xks5a5iHZwA%3D%3D" AS MLrate 
 
 CREATE(movie:Movie {movieid: toInteger(MLrate.movielensid),moviename: toString(MLrate.moviename)}),(user:User {username: toString(MLrate.username)}),(rating: Rating {rated: toFloat(MLrate.rating)})
 CREATE (movie)-[:WATCHED_BY]->(user)-[:Rated]->(rating);
 
+--------------------------------------\\*Suggest movie titles to a user based on the user's input of his/her favorite movie(s); user will be shown list of other users likely to have similar taste in movies
+----------------------------------------\\*user will then randomly indicate which user to base recommendation on
+
 
 MATCH (m:Movie {moviename:"______"})-[:WATCHED_BY]->(user)-[:Rated]->(rating) WHERE rating.rated >= 4,
 Return user.username AS Users_Like_You
-
 
 MATCH (m:Movie)-[:WATCHED_BY]->(user {username: "_____"})-[:Rated]->(rating) WHERE rating.rated >= 4 AND NOT (m.moviename = "____") RETURN m.moviename AS Movie_Recommendations ORDER BY rating.rated DESC LIMIT 10
