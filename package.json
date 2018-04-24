@@ -19,6 +19,6 @@
     "oracledb": "^2.2.0"
   },
   "devDependencies": {
-    "nodemon": ""
+    "nodemon": "latest"
   }
 }

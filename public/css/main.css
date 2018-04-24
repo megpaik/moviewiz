@@ -15,14 +15,17 @@ html, body {
   background-color: var(--secondary);
   color: var(--highlight);
 }
+
 .flex {
   display: flex;
 }
+
 .flexcol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .index-container {
   height: 100%;
 }
@@ -50,9 +53,13 @@ html, body {
 }
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: var(--highlight);
-  font-family: 'Arimo', sans-serif;}
-.btn {
+  font-family: 'Arimo', sans-serif;
+}
+button {
   border: none;
+  cursor: pointer;
+}
+.btn {
   background-color: var(--accent);
   border-radius: 1em;
   padding: 0.7em 2em;
@@ -69,7 +76,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: var(--highlight);
   font-size: 1.3em;
 }
-input:focus, button:focus {
+input:focus, button:focus, select:focus {
   outline: 0;
 }
 .nav {
@@ -83,6 +90,7 @@ input:focus, button:focus {
   color: var(--highlight);
   margin: 0.8em;
   margin-right: 0em;
+  margin-bottom: 0.4em;
   font-family: 'Arimo', sans-serif;
 }
 .logo {
@@ -90,4 +98,65 @@ input:focus, button:focus {
   font-size: 2em;
   font-weight: bold;
   padding-left: 0.5em;
+}
+.title {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.8em 1em;
+}
+select {
+  font-family: 'Arimo', sans-serif;
+  background-color: rgba(224, 226, 219, 0.5);
+  color: var(--highlight);
+  border: none;
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+option {
+  background-color: rgba(224, 226, 219, 0.5);
+  color: var(--primary);
+  font-family: 'Arimo', sans-serif;
+}
+.logout {
+  background-color: rgba(0,0,0,0);
+  font-size: 1.3em;
+  color: var(--accent);
+  padding-left: 1em;
+  margin-bottom: 0.1em;
+}
+a {
+  color: var(--highlight);
+  padding-bottom: 0.1em;
+}
+a#register, a#index {
+  color: rgba(224, 226, 219, 0.5);
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1em;
+}
+a#advsearch {
+  color: rgba(230, 175, 46, 0.8);
+  font-size: 0.8em;
+  margin-left: 4em;
+  text-decoration: none;
+}
+#warning {
+  font-size: 1.64em;
+  padding-left: 1.7em;
+  margin-bottom: 1em;
+}
+
+.adv-search {
+  text-align: left;
+  align-items: left;
+}
+
+#adv-form {
+  padding-left: 2.8em;
+}
+
+.field {
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
 }

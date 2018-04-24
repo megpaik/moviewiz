@@ -5,7 +5,6 @@
   <title>moviewiz</title>
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="../js/index.js"></script>
 </head>
 <body>
   <div class="index-container flex flexcol">
@@ -14,9 +13,10 @@
     <div class="login-container">
       <form method="post">
         <input type="text" class="login" id="username" name="username" placeholder="username"/><br>
-        <input type="text" class="login" id="password" name="password" placeholder="password"/><br>
+        <input type="password" class="login" id="password" name="password" placeholder="password"/><br>
         <a href="/register"><button type="submit" id="login-btn" class="btn">Register</button></a>
       </form>
+      <a href='/index' id="index">Back to Login</a>
     </div>
   </div>
 </body>

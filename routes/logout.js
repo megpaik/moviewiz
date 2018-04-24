@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/logout', (req, res) => {
   req.session.username = '';
-  res.render('index');
+  res.redirect('/index');
 });
 
 module.exports = router;

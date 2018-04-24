@@ -5,7 +5,6 @@
   <title>moviewiz</title>
   <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css" />
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
-  <!-- <script type="text/javascript" href="../js/search.js" /> -->
   </head>
 <body>
   <div class="container">
@@ -30,9 +29,21 @@
       </div>
       
     </div>
-    <div class="browse-container">
-      <div class="title">Recommended for You</div>
-      <div class="list"></div>
+    <div class="advanced-container">
+      <div class="title">Advanced Search</div>
+      <div class="adv-search flex flexcol">
+          <div id="warning">Fill in one or two fields to filter by</div>
+          <form id="adv-form">
+            <div class="field">Title: <input type="text" name="title"></div>
+            <div class="field">Director: <input type="text" name="director"></div>
+            <div class="field">Actor: <input type="text" name="actor"></div>
+            <div class="field">Genre: <input type="text" name="genre"></div>
+            <div class="field">Year: <input type="text" name="year"></div>
+            <div class="field"> Rating: <input type="text" name="rating"></div>
+            <button type="submit" id="adv-submit">Search</button>
+          </form>
+      </div>
+
     </div>
   </div>
 </body>
