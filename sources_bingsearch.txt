@@ -1,0 +1,19 @@
+Data sources:
+
+//images of books (BX-Books.csv)
+http://www2.informatik.uni-freiburg.de/~cziegler/BX/ 
+
+// user scraped wikipedia movie data on github (movies.json)
+https://github.com/prust/wikipedia-movie-data
+
+
+Cleaning Process:
+
+1) Converted movies.json to csv format.
+2) Used "notes" column to filter on "book", "novel","story" to see which films had been adapted from books and kept only the rows meeting this condition.
+3) Mapped genre column to keep only the first film genre if there is a list of genres. Ex: "Action,Drama" was mapped to "Action"
+4)  "0" indicates film genres that were grouped into the "Other" category.
+
+5) Removed 'Image-URL-S' and 'Image-URL-L' columns using R from BX-Books.csv
+
+6)Used R to match where Movie title from movies.json is the same as Book title from BX-Books.csv and kept only this subset to use later for HTML page.
