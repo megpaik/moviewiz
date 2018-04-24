@@ -5,6 +5,8 @@
   <title>moviewiz</title>
   <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css" />
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
+  <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+
   </head>
 <body>
     <div class="container">
@@ -15,9 +17,45 @@
           <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
         </form>
       </div>
-    <div class="search-body">
-      This is the search page. This should render the results of the naive search
+      <div class="title">Search Results</div>
+    <div class="search-container flex flexrow">
+      <div class="search-list"></div>
     </div>
   </div>
+
+  <script>
+    var images = {};
+    var json = require('../data/movieimages.json'); //(with path)
+    console.log(json);
+  
+    const results = <%-JSON.stringify(result)%>;
+    // tconst, movielensid, primary title, start year, runtime in minutes
+    var headers = results.metaData;
+    // array of arrays - inner array is [tconst, id, title, year, runtime]
+    var data = results.rows;
+    
+    // $(document).ready(() => {
+    //   for (var arr in data) {
+    //     addToPage(arr);
+    //   }
+    // })
+    for (var i = 0; i < data.length; i++) {
+      console.log(data[i]);
+      addToPage(data[i]);
+    }
+
+    function addToPage(arr) {
+      var title = arr[2];
+      console.log(title);
+      var div = '<div class="search-item" id="' + arr[0] + '">' + toTitleCase(arr[2]) + '</div>';
+      $(".search-list").append(div);
+    }
+
+    function toTitleCase(str) {
+      return str.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+    }
+</script>
 </body>
 </html>

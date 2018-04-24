@@ -5,7 +5,6 @@
   <title>moviewiz</title>
   <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css" />
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
-  <!-- <script type="text/javascript" href="../js/search.js" /> -->
   </head>
 <body>
   <div class="container">
@@ -14,14 +13,15 @@
       <div class="flex flexrow">
         <div class="flex flexcol">
         <form method="POST" action="/search">
-          <select>
+          <select name="category">
             <option value="title">Title</option>
             <option value="director">Director</option>
             <option value="actor">Actor</option>
             <option value="genre">Genre</option>
             <option value="year">Year</option>
+            <option value="rating">Rating&ge;</option>
           </select>
-          <input class="searchbar" type="text"/>
+          <input class="searchbar" name="field" type="text"/>
           <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
         </form>
         <div class="advsearch"><a href="/advanced" id="advsearch">advanced search</a></div>
