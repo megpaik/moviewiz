@@ -193,7 +193,7 @@ a#advsearch {
   border-radius: 2em;
   font-size: 1em;
 }
-a {
+.bing > a {
   text-decoration: none;
   font-family: 'Arimo', sans-serif;
 }

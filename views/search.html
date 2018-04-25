@@ -62,12 +62,17 @@
       for (var i = 0; i < headers.length; i++) {
         if (headers[i].name == 'TCONST') tconstindex = i;
         if (headers[i].name == 'PRIMARYTITLE') titleindex = i;
+        if (headers[i].name == 'STARTYEAR') yearindex = i;
+        if (headers[i].name == 'RUNTIMEMINUTES') timeindex = i;
       }
       var title = arr[titleindex];
-      var div = '<div class="search-item" id="' + arr[tconstindex] + '">' + '</div>';
+      var year = arr[yearindex];
+      var time = arr[timeindex];
+      var div = '<div class="search-item" id="' + arr[tconstindex] + '"></div>';
       $(".search-list").append(div);
       $('#'+arr[tconstindex]).append('<div class="search-item-title">' + toTitleCase(arr[titleindex]) + '</div>')
       $('#'+arr[tconstindex]).css('background-image', "url(" + getimgURL(arr[tconstindex]) + ")");
+      $('#'+arr[tconstindex]).append('<div class="movie-info"> Year: ' + year + '<br> Runtime: ' + time +  '</div>');
     }
 
     function toTitleCase(str) {
