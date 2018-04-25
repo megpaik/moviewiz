@@ -210,3 +210,8 @@ a#advsearch {
 .active {
   visibility: inherit;
 }
+#landing-title {
+  text-align: center;
+  margin-top: 2em;
+  letter-spacing: 0.1em;
+}
