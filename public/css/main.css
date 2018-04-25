@@ -197,3 +197,16 @@ a#advsearch {
   text-decoration: none;
   font-family: 'Arimo', sans-serif;
 }
+.movie-info {
+  width: 10em;
+  height: 10em; 
+  padding: 0.7em;
+  margin-bottom: 4em;
+  font-size: 1em;
+  background-color: var(--primary);
+  border-radius: 1em;
+
+}
+.active {
+  visibility: inherit;
+}

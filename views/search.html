@@ -37,12 +37,19 @@
 
   <script>
     var images = {};
-    var imagesReq = $.getJSON('https://raw.githubusercontent.com/megpaik/cis450/master/data/movieimages.json?token=Aa3wMltvfH6DuATefEyIZ24HI8orcAl4ks5a6PzewA%3D%3D', (json) => {
-      images = json;
-      render(images);
+    var collab = {};
+    var imagesReq = $.when(
+      $.getJSON('https://raw.githubusercontent.com/megpaik/cis450/master/data/movieimages.json?token=Aa3wMltvfH6DuATefEyIZ24HI8orcAl4ks5a6PzewA%3D%3D'), 
+      $.getJSON('https://raw.githubusercontent.com/megpaik/cis450/master/data/collabfit.json?token=Aa3wMkVvoWlOjFLbot5Z4cEx1QyylQAqks5a6cwOwA%3D%3D')).done(
+        (json1, json2) => {
+      images = json1;
+      images = images[0];
+      collab = json2;
+      collab = collab[0];
+      render(images, collab);
     });
   
-    function render(images) {
+    function render(images, collab) {
       const results = <%-JSON.stringify(result)%>;
       // tconst, movielensid, primary title, start year, runtime in minutes
       var headers = results.metaData;
@@ -59,6 +66,8 @@
       console.log(arr);
       var titleindex = 0;
       var tconstindex = 0;
+      var yearindex = 0;
+      var timeindex = 0;
       for (var i = 0; i < headers.length; i++) {
         if (headers[i].name == 'TCONST') tconstindex = i;
         if (headers[i].name == 'PRIMARYTITLE') titleindex = i;
@@ -68,11 +77,31 @@
       var title = arr[titleindex];
       var year = arr[yearindex];
       var time = arr[timeindex];
+      var movierecs = getRecs(arr[tconstindex]);
+      var rec1 = "";
+      var rec2 = "";
+      var rec3 = "";
+      var rec4 = "";
       var div = '<div class="search-item" id="' + arr[tconstindex] + '"></div>';
       $(".search-list").append(div);
       $('#'+arr[tconstindex]).append('<div class="search-item-title">' + toTitleCase(arr[titleindex]) + '</div>')
       $('#'+arr[tconstindex]).css('background-image', "url(" + getimgURL(arr[tconstindex]) + ")");
-      $('#'+arr[tconstindex]).append('<div class="movie-info"> Year: ' + year + '<br> Runtime: ' + time +  '</div>');
+      
+      if (movierecs) {
+        if (movierecs.m1) rec1 = toTitleCase(movierecs.m1);
+        if (movierecs.m2) rec2 = toTitleCase(movierecs.m2);
+        if (movierecs.m3) rec3 = toTitleCase(movierecs.m3);
+        if (movierecs.m4) rec4 = toTitleCase(movierecs.m4);
+      }
+
+      var description = '<div class="movie-info id="d'+arr[tconstindex] + '"> Year: ' + year + '<br> Runtime: ' + time 
+        +'<br> Recommended Movies: <br>' + rec1 + '<br>' + rec2 +'<br>' + rec3 +'<br>' + rec4 + '</div>';
+      $(".search-list").append(description);
+      
+      // $('#'+arr[tconstindex]).click(() => {
+      //   console.log($(' #d'+arr[tconstindex]));
+      //   $(' #d'+arr[tconstindex]).toggleClass('active');
+      // })
     }
 
     function toTitleCase(str) {
@@ -81,12 +110,22 @@
       });
     }
 
-    function getimgURL(id) {
-      for (var i = 0; i < images.length; i++) {
-        if (images[i].tconst == id) return images[i].url;
+    function getRecs(id) {
+      for (var i = 0; i < collab.length; i++) {
+        if (collab[i].tconst == id ) {
+          return collab[i];}
       }
       return null;
     }
+
+    function getimgURL(id) {
+      for (var i = 0; i < images.length; i++) {
+        if (images[i].tconst == id) {
+          return images[i].url;
+        }
+    }
+    return null;
+  }
 </script>
 </body>
 </html>
