@@ -160,3 +160,24 @@ a#advsearch {
   font-size: 1.2em;
   padding-bottom: 0.5em;
 }
+.search-container {
+  height: 100%;
+}
+.search-list {
+  width: 90%;
+  padding-left: 3em;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.search-item {
+  width: 10em;
+  height: 10em;
+  background-size: auto 10em;
+  background-position: center;
+  background-repeat: no-repeat;  
+  padding: 0.7em;
+  margin-bottom: 4em;
+}
+.search-item-title {
+  margin-top: 11em;
+}

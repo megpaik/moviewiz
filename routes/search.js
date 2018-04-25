@@ -3,7 +3,11 @@ var router = express.Router();
 var oracle = require('oracledb');
 
 router.get('/search', function (req, res, next) {
-  res.render('search');
+  if (!req.session.username || req.session.username === '') {
+    res.redirect('/index');
+  } else {
+    res.render('search');
+  }
 });
 
 router.post('/search', (req, res, next) => {
@@ -43,7 +47,7 @@ function getSQL(category, query) {
       return temp;
       break;
     case 'actor':
-      var temp = "SELECT * FROM ((SELECT nconst FROM Names WHERE primaryName='" + query + "') as n JOIN (SELECT * FROM Actors) as a ON n.nconst = a.nconst))";
+      var temp = "with n as (select * from names where primaryName ='" + query + "'), m as (select * from actors), movie as (select * from movies) select * from n,m, movie where n.nconst = m.nconst AND m.tconst = movie.tconst";
       return temp;
       break;
     case 'genre':
@@ -52,10 +56,6 @@ function getSQL(category, query) {
       break;
     case 'year':
       var temp = "SELECT * FROM Movies WHERE startYear='" + query + "'";
-      return temp;
-      break;
-    case 'rating':
-      var temp = "SELECT * FROM	IMDBRatings WHERE averageRating >='" + query + "'";
       return temp;
       break;
     default:

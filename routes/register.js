@@ -9,7 +9,10 @@ router.get('/register', (req, res) => {
 router.post('/register', (req, res) => {
   User.addUser(req.body.username, req.body.password, (err) => {
     if (err) res.send('Error: ' + err);
-    else res.render('browse');
+    else {
+      req.session.username = req.body.username;
+      res.render('browse');
+    };
   });
 });
 

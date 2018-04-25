@@ -6,7 +6,6 @@
   <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css" />
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
-
   </head>
 <body>
     <div class="container">
@@ -18,43 +17,57 @@
         </form>
       </div>
       <div class="title">Search Results</div>
-    <div class="search-container flex flexrow">
-      <div class="search-list"></div>
+    <div class="search-container">
+      <div class="search-list flex flexrow"></div>
     </div>
   </div>
 
   <script>
     var images = {};
-    var json = require('../data/movieimages.json'); //(with path)
-    console.log(json);
+    var imagesReq = $.getJSON('https://raw.githubusercontent.com/megpaik/cis450/master/data/movieimages.json?token=Aa3wMltvfH6DuATefEyIZ24HI8orcAl4ks5a6PzewA%3D%3D', (json) => {
+      images = json;
+      render(images);
+    });
   
-    const results = <%-JSON.stringify(result)%>;
-    // tconst, movielensid, primary title, start year, runtime in minutes
-    var headers = results.metaData;
-    // array of arrays - inner array is [tconst, id, title, year, runtime]
-    var data = results.rows;
-    
-    // $(document).ready(() => {
-    //   for (var arr in data) {
-    //     addToPage(arr);
-    //   }
-    // })
-    for (var i = 0; i < data.length; i++) {
-      console.log(data[i]);
-      addToPage(data[i]);
+    function render(images) {
+      const results = <%-JSON.stringify(result)%>;
+      // tconst, movielensid, primary title, start year, runtime in minutes
+      var headers = results.metaData;
+      // array of arrays - inner array is [tconst, id, title, year, runtime]
+      var data = results.rows;
+      console.log(headers);
+      console.log(data);
+      for (var i = 0; i < data.length; i++) {
+        addToPage(headers, data[i]);
+      }
     }
 
-    function addToPage(arr) {
-      var title = arr[2];
-      console.log(title);
-      var div = '<div class="search-item" id="' + arr[0] + '">' + toTitleCase(arr[2]) + '</div>';
+    function addToPage(headers, arr) {
+      console.log(arr);
+      var titleindex = 0;
+      var tconstindex = 0;
+      for (var i = 0; i < headers.length; i++) {
+        if (headers[i].name == 'TCONST') tconstindex = i;
+        if (headers[i].name == 'PRIMARYTITLE') titleindex = i;
+      }
+      var title = arr[titleindex];
+      var div = '<div class="search-item" id="' + arr[tconstindex] + '">' + '</div>';
       $(".search-list").append(div);
+      $('#'+arr[tconstindex]).append('<div class="search-item-title">' + toTitleCase(arr[titleindex]) + '</div>')
+      $('#'+arr[tconstindex]).css('background-image', "url(" + getimgURL(arr[tconstindex]) + ")");
     }
 
     function toTitleCase(str) {
       return str.replace(/\w\S*/g, function(txt) {
         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
       });
+    }
+
+    function getimgURL(id) {
+      for (var i = 0; i < images.length; i++) {
+        if (images[i].tconst == id) return images[i].url;
+      }
+      return null;
     }
 </script>
 </body>
