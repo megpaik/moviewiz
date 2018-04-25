@@ -181,3 +181,19 @@ a#advsearch {
 .search-item-title {
   margin-top: 11em;
 }
+#home {
+  text-decoration: none;
+}
+.bing {
+  align-self: left;
+  background-color: var(--accent);
+  color: var(--shadow);
+  padding: 0.8em;
+  font-family: 'Arimo', sans-serif;
+  border-radius: 2em;
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
+  font-family: 'Arimo', sans-serif;
+}

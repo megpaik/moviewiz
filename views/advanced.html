@@ -8,38 +8,48 @@
   </head>
 <body>
   <div class="container">
-    <div class="nav flex flexrow">
-      <div class="logo">moviewiz</div>
-      <div class="flex flexrow">
-        <div class="flex flexcol">
-        <form method="POST" action="/search">
-          <select>
-            <option value="title">Title</option>
-            <option value="director">Director</option>
-            <option value="actor">Actor</option>
-            <option value="genre">Genre</option>
-            <option value="year">Year</option>
-          </select>
-          <input class="searchbar" type="text"/>
-          <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
-        </form>
-        <div class="advsearch"><a href="/advanced" id="advsearch">advanced search</a></div>
-      </div>  
-      <button class='logout'><a href='/logout'><i class="fas fa-sign-out-alt"></i></a></button>
+      <div class="nav flex flexrow">
+        <div class="logo"><a href="/browse" id="home">moviewiz</a></div>
+          <div class="flex flexrow">
+          <div class="flex flexcol">
+          <form method="POST" action="/search">
+            <select name="category">
+              <option value="title">Title</option>
+              <option value="director">Director</option>
+              <option value="actor">Actor</option>
+              <option value="genre">Genre</option>
+              <option value="year">Year</option>
+            </select>
+            <input class="searchbar" name="field" type="text"/>
+            <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
+          </form>
+          <div class="advsearch"><a href="/advanced" id="advsearch">advanced search</a></div>
+        </div>  
+        <button class='logout'><a href='/logout'><i class="fas fa-sign-out-alt"></i></a></button>
+        </div>
       </div>
-      
-    </div>
+
     <div class="advanced-container">
       <div class="title">Advanced Search</div>
       <div class="adv-search flex flexcol">
-          <div id="warning">Fill in one or two fields to filter by</div>
-          <form id="adv-form">
-            <div class="field">Title: <input type="text" name="title"></div>
-            <div class="field">Director: <input type="text" name="director"></div>
-            <div class="field">Actor: <input type="text" name="actor"></div>
-            <div class="field">Genre: <input type="text" name="genre"></div>
-            <div class="field">Year: <input type="text" name="year"></div>
-            <div class="field"> Rating: <input type="text" name="rating"></div>
+          <div id="warning">Choose two fields to filter by</div>
+          <form id="adv-form" method="POST" action='/advanced'>
+              <select name="category1">
+                <option value="title">Title</option>
+                <option value="director">Director</option>
+                <option value="actor">Actor</option>
+                <option value="genre">Genre</option>
+                <option value="year">Year</option>
+              </select>
+              <input class="searchbar" name="field1" type="text"/><br>
+              <select name="category2">
+                <option value="title">Title</option>
+                <option value="director">Director</option>
+                <option value="actor">Actor</option>
+                <option value="genre">Genre</option>
+                <option value="year">Year</option>
+              </select>
+              <input class="searchbar" name="field2" type="text"/><br>
             <button type="submit" id="adv-submit">Search</button>
           </form>
       </div>

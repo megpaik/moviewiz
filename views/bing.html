@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css" />
+      <link rel="stylesheet" type="text/css" href="../css/main.css" />
+      <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+  </head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Arimo');
+
+:root {
+  --primary: #3E2F5B;
+  --secondary: #261132;
+  --accent: #E6AF2E;
+  --highlight: #e0e2db;
+  --shadow: #191716;
+}
+html, body {
+  height: 100%;
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+  background-color: var(--secondary);
+  color: var(--highlight);
+}
+
+ul {
+  list-style-type: none;
+  padding: 1em;}
+
+h2 { text-align: center}  
+       
+ </style>
+<div class="container">
+    <div class="nav flex flexrow">
+      <div class="logo"><a href="/browse" id="home">moviewiz</a></div>
+        <div class="flex flexrow">
+        <div class="flex flexcol">
+        <form method="POST" action="/search">
+          <select name="category">
+            <option value="title">Title</option>
+            <option value="director">Director</option>
+            <option value="actor">Actor</option>
+            <option value="genre">Genre</option>
+            <option value="year">Year</option>
+          </select>
+          <input class="searchbar" name="field" type="text"/>
+          <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
+        </form>
+        <div class="advsearch"><a href="/advanced" id="advsearch">advanced search</a></div>
+      </div>  
+      <button class='logout'><a href='/logout'><i class="fas fa-sign-out-alt"></i></a></button>
+      </div>
+    </div>
+<h1 style="text-align:center;">Click on your favorite book to learn more about its film adaptation!</h1>
+<h1 style="text-align:center;"><strong>Find by film genre</strong></h2>
+
+<ul style="text-align:center;"> 
+<li style="font-size:20px"><a href="#1">Action</a></li>
+<li style="font-size:20px"><a href="#2">Adventure</a></li>
+<li style="font-size:20px"><a href="#3">Animation</a></li>
+<li style="font-size:20px"><a href="#4">Comedy</a></li>
+<li style="font-size:20px"><a href="#5">Crime</a></li>
+<li style="font-size:20px"><a href="#6">Drama</a></li>
+<li style="font-size:20px"><a href="#7">Family</a></li>
+<li style="font-size:20px"><a href="#8">Film noir</a></li>
+<li style="font-size:20px"><a href="#9">Horror</a></li>
+<li style="font-size:20px"><a href="#10">Musical</a></li>
+<li style="font-size:20px"><a href="#11">Mystery</a></li>
+<li style="font-size:20px"><a href="#12">Other</a></li>
+<li style="font-size:20px"><a href="#13">Romance</a></li>
+<li style="font-size:20px"><a href="#16">Science fiction</a></li>
+<li style="font-size:20px"><a href="#17">Suspense/Thriller</a></li>
+
+</ul>
+
+<h2 id="1">Action</h2>
+
+<a href="https://www.bing.com/search?q=movie+First+Blood"><img src="http://images.amazon.com/images/P/0446364401.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ice+Station+Zebra"><img src="http://images.amazon.com/images/P/0385042671.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Raise+the+Titanic"><img src="http://images.amazon.com/images/P/0553258966.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Die+Hard"><img src="http://images.amazon.com/images/P/0804102295.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Warriors"><img src="http://images.amazon.com/images/P/0802139922.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+20,000+Leagues+Under+the+Sea"><img src="http://images.amazon.com/images/P/0812550927.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Losers"><img src="http://images.amazon.com/images/P/0345385209.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Drive"><img src="http://images.amazon.com/images/P/088899348X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Heat"><img src="http://images.amazon.com/images/P/0671039482.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Flight+of+the+Phoenix"><img src="http://images.amazon.com/images/P/0515100897.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Clear+and+Present+Danger"><img src="http://images.amazon.com/images/P/0425144372.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ender's+Game"><img src="http://images.amazon.com/images/P/0812589041.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Life+of+Pi"><img src="http://images.amazon.com/images/P/0151008116.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="2">Adventure</h2>
+
+<a href="https://www.bing.com/search?q=movie+Jurassic+Park"><img src="http://images.amazon.com/images/P/0345370775.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Jungle+Book"><img src="http://images.amazon.com/images/P/1561384755.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Beach"><img src="http://images.amazon.com/images/P/1573226521.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Robinson+Crusoe"><img src="http://images.amazon.com/images/P/0762414197.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sphinx"><img src="http://images.amazon.com/images/P/0451159497.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Moby+Dick"><img src="http://images.amazon.com/images/P/B00009APKU.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Treasure+Island"><img src="http://images.amazon.com/images/P/0451521897.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Three+Musketeers"><img src="http://images.amazon.com/images/P/0451525949.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Around+the+World+in+Eighty+Days"><img src="http://images.amazon.com/images/P/059043053X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Clan+of+the+Cave+Bear"><img src="http://images.amazon.com/images/P/0553381679.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sometimes+a+Great+Notion"><img src="http://images.amazon.com/images/P/0140045295.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Kim"><img src="http://images.amazon.com/images/P/1853260991.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Count+of+Monte+Cristo"><img src="http://images.amazon.com/images/P/0451521951.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ivanhoe"><img src="http://images.amazon.com/images/P/0451521943.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Kidnapped"><img src="http://images.amazon.com/images/P/0060619759.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Papillon"><img src="http://images.amazon.com/images/P/0060934794.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Caravans"><img src="http://images.amazon.com/images/P/0449213803.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Two+Years+Before+the+Mast"><img src="http://images.amazon.com/images/P/1582182868.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Perfect+Storm"><img src="http://images.amazon.com/images/P/037540421X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+King+Solomon's+Mines"><img src="http://images.amazon.com/images/P/0175565821.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Last+of+the+Mohicans"><img src="http://images.amazon.com/images/P/0140157409.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Old+Man+and+the+Sea"><img src="http://images.amazon.com/images/P/081615970X.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+
+<h2 id="3">Animation</h2>
+
+
+<a href="https://www.bing.com/search?q=movie+Charlotte's+Web"><img src="http://images.amazon.com/images/P/059030271X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Peter+Pan"><img src="http://images.amazon.com/images/P/1570828016.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Hunchback+of+Notre+Dame"><img src="http://images.amazon.com/images/P/0812563123.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Return+of+the+King"><img src="http://images.amazon.com/images/P/0345272609.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Jungle+Book"><img src="http://images.amazon.com/images/P/0812504690.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Toy+Story+2"><img src="http://images.amazon.com/images/P/0736401512.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Polar+Express"><img src="http://images.amazon.com/images/P/0395389496.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+
+
+<h2 id="4">Comedy</h2>
+
+<a href="https://www.bing.com/search?q=movie+Prizzi's+Honor"><img src="http://images.amazon.com/images/P/042509507X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Christmas+Story"><img src="http://images.amazon.com/images/P/0393030342.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+I+Don't+Know+How+She+Does+It"><img src="http://images.amazon.com/images/P/0375713751.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+High+Fidelity"><img src="http://images.amazon.com/images/P/1573225517.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Witches+of+Eastwick"><img src="http://images.amazon.com/images/P/0449912108.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Rules+of+Attraction"><img src="http://images.amazon.com/images/P/067978148X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cheaper+by+the+Dozen"><img src="http://images.amazon.com/images/P/0060594330.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Being+There"><img src="http://images.amazon.com/images/P/0553279300.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Practical+Magic"><img src="http://images.amazon.com/images/P/0425168468.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Divine+Secrets+of+the+Ya-Ya+Sisterhood"><img src="http://images.amazon.com/images/P/0061015075.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Memoirs+of+an+Invisible+Man"><img src="http://images.amazon.com/images/P/0689117353.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+World+According+to+Garp"><img src="http://images.amazon.com/images/P/034536676X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Fletch"><img src="http://images.amazon.com/images/P/0380006456.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Compromising+Positions"><img src="http://images.amazon.com/images/P/0515093025.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Please+Don't+Eat+the+Daisies"><img src="http://images.amazon.com/images/P/0848805526.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Home"><img src="http://images.amazon.com/images/P/0810934353.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Pocketful+of+Miracles"><img src="http://images.amazon.com/images/P/0446395366.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mrs.+'Arris+Goes+to+Paris"><img src="http://images.amazon.com/images/P/1558820213.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Election"><img src="http://images.amazon.com/images/P/0399143661.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Travels+with+My+Aunt"><img src="http://images.amazon.com/images/P/0140032215.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Nobody's+Fool"><img src="http://images.amazon.com/images/P/0394577787.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Heartbreak+Hotel"><img src="http://images.amazon.com/images/P/0345319532.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Inventing+the+Abbotts"><img src="http://images.amazon.com/images/P/0385312466.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Loved+One"><img src="http://images.amazon.com/images/P/0760725187.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Touch"><img src="http://images.amazon.com/images/P/0380703866.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Prisoner+of+Zenda"><img src="http://images.amazon.com/images/P/0886460980.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mermaids"><img src="http://images.amazon.com/images/P/0451169255.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Alexander+and+the+Terrible,+Horrible,+No+Good,+Very+Bad+Day"><img src="http://images.amazon.com/images/P/0689704283.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Rhubarb"><img src="http://images.amazon.com/images/P/0843123001.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+War+of+the+Roses"><img src="http://images.amazon.com/images/P/0451166566.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Lonely+Guy"><img src="http://images.amazon.com/images/P/0070224382.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Krippendorf's+Tribe"><img src="http://images.amazon.com/images/P/0385332815.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Neighbors"><img src="http://images.amazon.com/images/P/0440559758.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Tortilla+Flat"><img src="http://images.amazon.com/images/P/0140042407.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Rabbit,+Run"><img src="http://images.amazon.com/images/P/0449911659.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Road+to+Wellville"><img src="http://images.amazon.com/images/P/0670843342.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cool+Runnings"><img src="http://images.amazon.com/images/P/0812583868.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Big+Trouble"><img src="http://images.amazon.com/images/P/0425184129.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+About+a+Boy"><img src="http://images.amazon.com/images/P/1573227331.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Hotel+New+Hampshire"><img src="http://images.amazon.com/images/P/034540047X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Where+the+Heart+Is"><img src="http://images.amazon.com/images/P/0380767635.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Bonfire+of+the+Vanities"><img src="http://images.amazon.com/images/P/0553275976.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Catch+Me+If+You+Can"><img src="http://images.amazon.com/images/P/0448165384.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Portnoy's+Complaint"><img src="http://images.amazon.com/images/P/0679756450.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Postcards+from+the+Edge"><img src="http://images.amazon.com/images/P/0671724738.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lolita"><img src="http://images.amazon.com/images/P/2070412083.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Slaves+of+New+York"><img src="http://images.amazon.com/images/P/0671745247.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Dangerous+Lives+of+Altar+Boys"><img src="http://images.amazon.com/images/P/0820323381.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Wonder+Boys"><img src="http://images.amazon.com/images/P/0679415882.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Front"><img src="http://images.amazon.com/images/P/0671807390.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Tell+Me+That+You+Love+Me,+Junie+Moon"><img src="http://images.amazon.com/images/P/0374272808.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+About+Schmidt"><img src="http://images.amazon.com/images/P/0788790277.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Richie+Rich"><img src="http://images.amazon.com/images/P/0590250876.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Gulliver's+Travels"><img src="http://images.amazon.com/images/P/0075536307.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+American+Psycho"><img src="http://images.amazon.com/images/P/8440622953.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Youth+in+Revolt"><img src="http://images.amazon.com/images/P/0385481969.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Geography+Club"><img src="http://images.amazon.com/images/P/0060012218.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Big+Fish"><img src="http://images.amazon.com/images/P/0142004278.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+
+
+<h2 id="5">Crime</h2>
+
+<a href="https://www.bing.com/search?q=movie+Out+of+Sight"><img src="http://images.amazon.com/images/P/0440214424.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Bone+Collector"><img src="http://images.amazon.com/images/P/0451210255.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Vendetta"><img src="http://images.amazon.com/images/P/0553267337.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Client"><img src="http://images.amazon.com/images/P/038542471X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Patriot+Games"><img src="http://images.amazon.com/images/P/0425134350.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Red+Dragon"><img src="http://images.amazon.com/images/P/0440206154.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Rising+Sun"><img src="http://images.amazon.com/images/P/0345380371.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Absolute+Power"><img src="http://images.amazon.com/images/P/0446519960.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Dolores+Claiborne"><img src="http://images.amazon.com/images/P/0451177096.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Presumed+Innocent"><img src="http://images.amazon.com/images/P/0446359866.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Godfather"><img src="http://images.amazon.com/images/P/0451167716.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+General's+Daughter"><img src="http://images.amazon.com/images/P/0446513067.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cruel+Doubt"><img src="http://images.amazon.com/images/P/5553465214.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Gorky+Park"><img src="http://images.amazon.com/images/P/0345298349.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Juror"><img src="http://images.amazon.com/images/P/0446518859.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Just+Cause"><img src="http://images.amazon.com/images/P/0345380193.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+L.A.+Confidential"><img src="http://images.amazon.com/images/P/0446674249.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Primal+Fear"><img src="http://images.amazon.com/images/P/067940211X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Pledge"><img src="http://images.amazon.com/images/P/0446608483.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Blood+Work"><img src="http://images.amazon.com/images/P/0446602620.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Blind+Faith"><img src="http://images.amazon.com/images/P/0451162188.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Prince+of+the+City"><img src="http://images.amazon.com/images/P/0446365696.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Heaven's+Prisoners"><img src="http://images.amazon.com/images/P/0743449193.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Onion+Field"><img src="http://images.amazon.com/images/P/0440173507.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+In+Cold+Blood"><img src="http://images.amazon.com/images/P/0451149955.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+True+Confessions"><img src="http://images.amazon.com/images/P/0525934669.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Casino"><img src="http://images.amazon.com/images/P/0671665707.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Prayer+for+the+Dying"><img src="http://images.amazon.com/images/P/0312255012.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Stick"><img src="http://images.amazon.com/images/P/0380676524.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Road+to+Perdition"><img src="http://images.amazon.com/images/P/0451410297.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Miami+Blues"><img src="http://images.amazon.com/images/P/0345320166.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Anatomy+of+a+Murder"><img src="http://images.amazon.com/images/P/0312912781.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Year+of+the+Dragon"><img src="http://images.amazon.com/images/P/0446365726.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sharky's+Machine"><img src="http://images.amazon.com/images/P/0345402391.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Family+Business"><img src="http://images.amazon.com/images/P/0449145670.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Outfit"><img src="http://images.amazon.com/images/P/1582342792.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cold+in+July"><img src="http://images.amazon.com/images/P/0446404306.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Jackie+Brown"><img src="http://images.amazon.com/images/P/8440644574.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+At+Close+Range"><img src="http://images.amazon.com/images/P/0373272928.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Killer+Inside+Me"><img src="http://images.amazon.com/images/P/067940368X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Carlito's+Way"><img src="http://images.amazon.com/images/P/0380722879.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Choirboys"><img src="http://images.amazon.com/images/P/0440111889.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Savages"><img src="http://images.amazon.com/images/P/0671643908.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Iceman"><img src="http://images.amazon.com/images/P/1931722188.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Shutter+Island"><img src="http://images.amazon.com/images/P/038073186X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Walking+Tall"><img src="http://images.amazon.com/images/P/0523004788.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Serpico"><img src="http://images.amazon.com/images/P/0061012149.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Get+Shorty"><img src="http://images.amazon.com/images/P/0385301413.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Kiss+the+Girls"><img src="http://images.amazon.com/images/P/0446601241.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+
+
+
+
+<h2 id="6">Drama</h2>
+
+
+<a href="https://www.bing.com/search?q=movie+To+Kill+a+Mockingbird"><img src="http://images.amazon.com/images/P/0446310786.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+All+the+King's+Men"><img src="http://images.amazon.com/images/P/0156047624.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Breathing+Lessons"><img src="http://images.amazon.com/images/P/042511774X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Joy+Luck+Club"><img src="http://images.amazon.com/images/P/0804106304.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Mosquito+Coast"><img src="http://images.amazon.com/images/P/0380619458.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+My+Antonia"><img src="http://images.amazon.com/images/P/039575514X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Firm"><img src="http://images.amazon.com/images/P/0385416342.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Chamber"><img src="http://images.amazon.com/images/P/0385424728.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Snow+Falling+on+Cedars"><img src="http://images.amazon.com/images/P/0151001006.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Last+Exit+to+Brooklyn"><img src="http://images.amazon.com/images/P/0747549923.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Billy+Bathgate"><img src="http://images.amazon.com/images/P/039457513X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Time+to+Kill"><img src="http://images.amazon.com/images/P/0440211727.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Mothman+Prophecies"><img src="http://images.amazon.com/images/P/0765341972.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ordinary+People"><img src="http://images.amazon.com/images/P/0140065172.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Rainmaker"><img src="http://images.amazon.com/images/P/044022165X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Unbearable+Lightness+of+Being"><img src="http://images.amazon.com/images/P/0060914653.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+House+of+the+Spirits"><img src="http://images.amazon.com/images/P/0553273914.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ironweed"><img src="http://images.amazon.com/images/P/0140070206.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Cider+House+Rules"><img src="http://images.amazon.com/images/P/0553258001.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Civil+Action"><img src="http://images.amazon.com/images/P/0679772677.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Fountainhead"><img src="http://images.amazon.com/images/P/0451191153.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Emma"><img src="http://images.amazon.com/images/P/0451523067.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+How+to+Make+an+American+Quilt"><img src="http://images.amazon.com/images/P/0345370805.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Green+Mile"><img src="http://images.amazon.com/images/P/0671032658.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lord+of+the+Flies"><img src="http://images.amazon.com/images/P/0399501487.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Age+of+Innocence"><img src="http://images.amazon.com/images/P/1593080743.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Mighty"><img src="http://images.amazon.com/images/P/0590110225.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Veronika+Decides+to+Die"><img src="http://images.amazon.com/images/P/0060955775.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Pay+It+Forward"><img src="http://images.amazon.com/images/P/0743412028.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Thousand+Acres"><img src="http://images.amazon.com/images/P/0394577736.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Jane+Eyre"><img src="http://images.amazon.com/images/P/0451518845.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Naked+Lunch"><img src="http://images.amazon.com/images/P/0802132952.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Member+of+the+Wedding"><img src="http://images.amazon.com/images/P/0553250515.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Out+of+Africa"><img src="http://images.amazon.com/images/P/0394717406.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Great+Gatsby"><img src="http://images.amazon.com/images/P/185326041X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Passage+to+India"><img src="http://images.amazon.com/images/P/0156711427.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Prince+of+Tides"><img src="http://images.amazon.com/images/P/0553268880.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Bridges+of+Madison+County"><img src="http://images.amazon.com/images/P/044651652X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mrs+Dalloway"><img src="http://images.amazon.com/images/P/0156628708.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Sicilian"><img src="http://images.amazon.com/images/P/0345441702.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Accidental+Tourist"><img src="http://images.amazon.com/images/P/0425161617.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Outsiders"><img src="http://images.amazon.com/images/P/0440967694.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+War+and+Peace"><img src="http://images.amazon.com/images/P/0859533565.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Legend+of+Bagger+Vance"><img src="http://images.amazon.com/images/P/0380817446.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+How+Stella+Got+Her+Groove+Back"><img src="http://images.amazon.com/images/P/0451197410.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Heartburn"><img src="http://images.amazon.com/images/P/0679767959.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+East+of+Eden"><img src="http://images.amazon.com/images/P/0140049975.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Of+Mice+and+Men"><img src="http://images.amazon.com/images/P/0142000671.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Up+at+the+Villa"><img src="http://images.amazon.com/images/P/0375724621.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Virgin+Suicides"><img src="http://images.amazon.com/images/P/0446670251.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Midnight+in+the+Garden+of+Good+and+Evil"><img src="http://images.amazon.com/images/P/0679751521.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bless+Me,+Ultima"><img src="http://images.amazon.com/images/P/0446600253.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Beloved"><img src="http://images.amazon.com/images/P/0452280621.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Other+Side+of+Midnight"><img src="http://images.amazon.com/images/P/0446357405.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sleepers"><img src="http://images.amazon.com/images/P/0345404114.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Eleni"><img src="http://images.amazon.com/images/P/0394520939.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+One+True+Thing"><img src="http://images.amazon.com/images/P/067940712X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Horse+Whisperer"><img src="http://images.amazon.com/images/P/0440222656.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Simple+Plan"><img src="http://images.amazon.com/images/P/0312952716.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Moll+Flanders"><img src="http://images.amazon.com/images/P/0451520955.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mary+Reilly"><img src="http://images.amazon.com/images/P/0385249683.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Trial"><img src="http://images.amazon.com/images/P/0099428644.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Anna+Karenina"><img src="http://images.amazon.com/images/P/0553211714.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Deliverance"><img src="http://images.amazon.com/images/P/0440318688.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+One+Flew+Over+the+Cuckoo's+Nest"><img src="http://images.amazon.com/images/P/0451143426.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Needful+Things"><img src="http://images.amazon.com/images/P/0451178599.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Madame+Bovary"><img src="http://images.amazon.com/images/P/0140449124.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Up+the+Down+Staircase"><img src="http://images.amazon.com/images/P/0060973617.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Place+in+the+Sun"><img src="http://images.amazon.com/images/P/0141301236.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Oscar+and+Lucinda"><img src="http://images.amazon.com/images/P/0060159081.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Wild+at+Heart"><img src="http://images.amazon.com/images/P/0451205987.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Washington+Square"><img src="http://images.amazon.com/images/P/0060955716.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Schindler's+List"><img src="http://images.amazon.com/images/P/0671880314.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Big+Sur"><img src="http://images.amazon.com/images/P/0140168125.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bloodline"><img src="http://images.amazon.com/images/P/0446341878.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bridge+to+Terabithia"><img src="http://images.amazon.com/images/P/006073941X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Tuck+Everlasting"><img src="http://images.amazon.com/images/P/0590988867.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Gingerbread+Man"><img src="http://images.amazon.com/images/P/0515131679.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Lords+of+Discipline"><img src="http://images.amazon.com/images/P/0553271369.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Tender+Is+the+Night"><img src="http://images.amazon.com/images/P/1853260975.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Prize"><img src="http://images.amazon.com/images/P/0671702513.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Arrangement"><img src="http://images.amazon.com/images/P/0812881176.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Heart+Is+a+Lonely+Hunter"><img src="http://images.amazon.com/images/P/0553269631.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cannery+Row"><img src="http://images.amazon.com/images/P/0553234161.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Awakenings"><img src="http://images.amazon.com/images/P/0375704051.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Quiet+American"><img src="http://images.amazon.com/images/P/0142001384.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Legends+of+the+Fall"><img src="http://images.amazon.com/images/P/0385285965.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Carried+Away"><img src="http://images.amazon.com/images/P/0671521446.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+I+Never+Promised+You+a+Rose+Garden"><img src="http://images.amazon.com/images/P/0451160312.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Last+Picture+Show"><img src="http://images.amazon.com/images/P/0671753819.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Good+Mother"><img src="http://images.amazon.com/images/P/0385312431.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+End+of+the+Affair"><img src="http://images.amazon.com/images/P/0140291091.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Big+Bounce"><img src="http://images.amazon.com/images/P/0060084022.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Paperboy"><img src="http://images.amazon.com/images/P/0385315724.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Less+Than+Zero"><img src="http://images.amazon.com/images/P/0330294008.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ragtime"><img src="http://images.amazon.com/images/P/0452279070.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Shining+Through"><img src="http://images.amazon.com/images/P/0345358031.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Hawaii"><img src="http://images.amazon.com/images/P/0449213358.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Uncle+Tom's+Cabin"><img src="http://images.amazon.com/images/P/0451523024.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Certain+Smile"><img src="http://images.amazon.com/images/P/0449224260.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Music+of+Chance"><img src="http://images.amazon.com/images/P/0140154078.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Rich+Man,+Poor+Man"><img src="http://images.amazon.com/images/P/0385288581.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Scruples"><img src="http://images.amazon.com/images/P/0553284657.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Under+the+Volcano"><img src="http://images.amazon.com/images/P/0452255953.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Blackbird"><img src="http://images.amazon.com/images/P/0446361925.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Beaches"><img src="http://images.amazon.com/images/P/0553277464.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sophie's+Choice"><img src="http://images.amazon.com/images/P/0553277499.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Islands+in+the+Stream"><img src="http://images.amazon.com/images/P/055320226X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Exodus"><img src="http://images.amazon.com/images/P/0553258478.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Far+from+the+Madding+Crowd"><img src="http://images.amazon.com/images/P/0451528565.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Forrest+Gump"><img src="http://images.amazon.com/images/P/0743453255.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+What's+Eating+Gilbert+Grape"><img src="http://images.amazon.com/images/P/0749336137.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Set-Up"><img src="http://images.amazon.com/images/P/0312151101.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lace"><img src="http://images.amazon.com/images/P/0671446622.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Not+Without+My+Daughter"><img src="http://images.amazon.com/images/P/0312925883.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Seven+Years+in+Tibet"><img src="http://images.amazon.com/images/P/0874778883.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Fan"><img src="http://images.amazon.com/images/P/0446603147.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Possession"><img src="http://images.amazon.com/images/P/0451167570.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Endless+Love"><img src="http://images.amazon.com/images/P/0880016280.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Bell+Jar"><img src="http://images.amazon.com/images/P/0553278355.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Deadline"><img src="http://images.amazon.com/images/P/0880706600.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Russia+House"><img src="http://images.amazon.com/images/P/0671042793.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Honkytonk+Man"><img src="http://images.amazon.com/images/P/0515071250.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Magus"><img src="http://images.amazon.com/images/P/0099743914.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Razor's+Edge"><img src="http://images.amazon.com/images/P/0140018603.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Texasville"><img src="http://images.amazon.com/images/P/0671735179.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+River+Runs+Through+It"><img src="http://images.amazon.com/images/P/0226500608.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Head+Over+Heels"><img src="http://images.amazon.com/images/P/0380819171.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cat+Chaser"><img src="http://images.amazon.com/images/P/0688163416.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+For+Love+of+the+Game"><img src="http://images.amazon.com/images/P/0345408918.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Group"><img src="http://images.amazon.com/images/P/0156372088.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+All+the+Way+Home"><img src="http://images.amazon.com/images/P/0786010924.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Great+Santini"><img src="http://images.amazon.com/images/P/0553268929.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Twelve"><img src="http://images.amazon.com/images/P/0802140122.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Summer+Place"><img src="http://images.amazon.com/images/P/0373711018.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Primary+Colors"><img src="http://images.amazon.com/images/P/0099738813.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mother+Night"><img src="http://images.amazon.com/images/P/0440158532.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Natural"><img src="http://images.amazon.com/images/P/0380506092.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Ice+Storm"><img src="http://images.amazon.com/images/P/0316579211.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Portrait+of+a+Lady"><img src="http://images.amazon.com/images/P/0451525973.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Shoes+of+the+Fisherman"><img src="http://images.amazon.com/images/P/0312924666.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Man+in+the+Iron+Mask"><img src="http://images.amazon.com/images/P/0812564995.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Tex"><img src="http://images.amazon.com/images/P/0440978505.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+God's+Pocket"><img src="http://images.amazon.com/images/P/0140246274.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Clara's+Heart"><img src="http://images.amazon.com/images/P/0877957444.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+At+Play+in+the+Fields+of+the+Lord"><img src="http://images.amazon.com/images/P/0679737413.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+In+Country"><img src="http://images.amazon.com/images/P/0060809590.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Looking+for+Mr.+Goodbar"><img src="http://images.amazon.com/images/P/067122025X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+In+Love+and+War"><img src="http://images.amazon.com/images/P/0553253166.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sayonara"><img src="http://images.amazon.com/images/P/8401490243.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Clockers"><img src="http://images.amazon.com/images/P/0060934980.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Justine"><img src="http://images.amazon.com/images/P/0525470808.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Moonshine+War"><img src="http://images.amazon.com/images/P/0440158079.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Remains+of+the+Day"><img src="http://images.amazon.com/images/P/0394573439.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Hours"><img src="http://images.amazon.com/images/P/0736644962.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Man,+Woman+and+Child"><img src="http://images.amazon.com/images/P/0553562355.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cry,+the+Beloved+Country"><img src="http://images.amazon.com/images/P/074326195X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Peyton+Place"><img src="http://images.amazon.com/images/P/1555534007.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Man+in+the+Middle"><img src="http://images.amazon.com/images/P/1890862258.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Return+of+the+Soldier"><img src="http://images.amazon.com/images/P/0786703474.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Where+Love+Has+Gone"><img src="http://images.amazon.com/images/P/0671874985.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Tobacco+Road"><img src="http://images.amazon.com/images/P/082031661X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Drugstore+Cowboy"><img src="http://images.amazon.com/images/P/038530224X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Rosewood"><img src="http://images.amazon.com/images/P/0061040533.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mountains+of+the+Moon"><img src="http://images.amazon.com/images/P/0345363094.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Day+of+the+Locust"><img src="http://images.amazon.com/images/P/0451523482.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Nicholas+Nickleby"><img src="http://images.amazon.com/images/P/0553210866.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Forever+Amber"><img src="http://images.amazon.com/images/P/1556524048.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Bostonians"><img src="http://images.amazon.com/images/P/0553211536.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Carpetbaggers"><img src="http://images.amazon.com/images/P/1568491417.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Homesman"><img src="http://images.amazon.com/images/P/1555842356.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Birdy"><img src="http://images.amazon.com/images/P/0679734120.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Saint+Jack"><img src="http://images.amazon.com/images/P/0370014804.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Breakfast+at+Tiffany's"><img src="http://images.amazon.com/images/P/0451166515.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Walk+on+the+Wild+Side"><img src="http://images.amazon.com/images/P/0385318979.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Crisis"><img src="http://images.amazon.com/images/P/0891414118.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Of+Human+Bondage"><img src="http://images.amazon.com/images/P/0140018611.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Daniel"><img src="http://images.amazon.com/images/P/0769603718.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Some+Came+Running"><img src="http://images.amazon.com/images/P/0440182611.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Fat+City"><img src="http://images.amazon.com/images/P/0394743164.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Madame+Sousatzka"><img src="http://images.amazon.com/images/P/0446328987.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Desert+Hearts"><img src="http://images.amazon.com/images/P/0451406788.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Wild+Card"><img src="http://images.amazon.com/images/P/0345242513.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bright+Lights,+Big+City"><img src="http://images.amazon.com/images/P/0224022911.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Europeans"><img src="http://images.amazon.com/images/P/0140071504.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+White+Oleander"><img src="http://images.amazon.com/images/P/1410400816.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Dry+White+Season"><img src="http://images.amazon.com/images/P/0140068902.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bang+the+Drum+Slowly"><img src="http://images.amazon.com/images/P/0803272219.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Once+Is+Not+Enough"><img src="http://images.amazon.com/images/P/0802135455.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Wanderers"><img src="http://images.amazon.com/images/P/0395977746.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Valley+of+the+Dolls"><img src="http://images.amazon.com/images/P/0929071506.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Winter+Kills"><img src="http://images.amazon.com/images/P/0440160073.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Dad"><img src="http://images.amazon.com/images/P/0380585944.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Chairman"><img src="http://images.amazon.com/images/P/1581340389.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Serena"><img src="http://images.amazon.com/images/P/0451081633.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Harrad+Experiment"><img src="http://images.amazon.com/images/P/0879756233.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Youngblood+Hawke"><img src="http://images.amazon.com/images/P/0316955175.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ten+North+Frederick"><img src="http://images.amazon.com/images/P/0394448146.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Julia"><img src="http://images.amazon.com/images/P/0345438655.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Nine+Hours+to+Rama"><img src="http://images.amazon.com/images/P/9997410440.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Losing+Isaiah"><img src="http://images.amazon.com/images/P/0515115398.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Elmer+Gantry"><img src="http://images.amazon.com/images/P/0451516532.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Green+Mansions"><img src="http://images.amazon.com/images/P/0877207267.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Giant"><img src="http://images.amazon.com/images/P/0899668062.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ice+Palace"><img src="http://images.amazon.com/images/P/0449241246.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Ninth+Configuration"><img src="http://images.amazon.com/images/P/0517331853.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Bridge+of+San+Luis+Rey"><img src="http://images.amazon.com/images/P/0380005891.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Never+Let+Me+Go"><img src="http://images.amazon.com/images/P/1575663414.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Hunt+for+Red+October"><img src="http://images.amazon.com/images/P/0425120279.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+All+the+President's+Men"><img src="http://images.amazon.com/images/P/0671894412.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+In+the+Name+of+the+Father"><img src="http://images.amazon.com/images/P/0452272785.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Shattered+Glass"><img src="http://images.amazon.com/images/P/0515100552.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Right+Stuff"><img src="http://images.amazon.com/images/P/0553275569.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Midnight+Express"><img src="http://images.amazon.com/images/P/0445043024.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cry+Freedom"><img src="http://images.amazon.com/images/P/0425107760.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Elephant+Man"><img src="http://images.amazon.com/images/P/0345345134.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Wired"><img src="http://images.amazon.com/images/P/0963863908.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bird"><img src="http://images.amazon.com/images/P/0330351389.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Dragon:+The+Bruce+Lee+Story"><img src="http://images.amazon.com/images/P/0515111716.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Frances"><img src="http://images.amazon.com/images/P/1843170434.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Blaze"><img src="http://images.amazon.com/images/P/0425093336.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Stand+and+Deliver"><img src="http://images.amazon.com/images/P/0590428314.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Insider"><img src="http://images.amazon.com/images/P/0345428285.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Even+Cowgirls+Get+the+Blues"><img src="http://images.amazon.com/images/P/0553205803.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Exit+to+Eden"><img src="http://images.amazon.com/images/P/0345401964.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Doctor+Zhivago"><img src="http://images.amazon.com/images/P/0679774386.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Roots"><img src="http://images.amazon.com/images/P/0440174643.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+War+and+Remembrance"><img src="http://images.amazon.com/images/P/0316954993.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Farewell+to+Arms"><img src="http://images.amazon.com/images/P/0808519255.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Four+Feathers"><img src="http://images.amazon.com/images/P/0743448219.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="7">Family</h2>
+
+
+<a href="https://www.bing.com/search?q=movie+My+Side+of+the+Mountain"><img src="http://images.amazon.com/images/P/0140348107.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Little+Women"><img src="http://images.amazon.com/images/P/185854176X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Matilda"><img src="http://images.amazon.com/images/P/014034294X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mr.+Popper's+Penguins"><img src="http://images.amazon.com/images/P/0590477331.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Stuart+Little"><img src="http://images.amazon.com/images/P/0064400565.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+From+the+Mixed-Up+Files+of+Mrs.+Basil+E.+Frankweiler"><img src="http://images.amazon.com/images/P/0440431808.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Adventures+of+Huckleberry+Finn"><img src="http://images.amazon.com/images/P/1566192951.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Muppet+Christmas+Carol"><img src="http://images.amazon.com/images/P/0307127958.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Spencer's+Mountain"><img src="http://images.amazon.com/images/P/1568490224.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Pollyanna"><img src="http://images.amazon.com/images/P/0899681069.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Animal+Farm"><img src="http://images.amazon.com/images/P/0451526341.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Yearling"><img src="http://images.amazon.com/images/P/0684718782.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Harry+Potter+and+the+Chamber+of+Secrets"><img src="http://images.amazon.com/images/P/0747545774.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Harriet+the+Spy"><img src="http://images.amazon.com/images/P/0064406601.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Black+Beauty"><img src="http://images.amazon.com/images/P/0440403553.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="8">Film noir</h2>
+
+<a href="https://www.bing.com/search?q=movie+The+Breaking+Point"><img src="http://images.amazon.com/images/P/1590520335.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Laura"><img src="http://images.amazon.com/images/P/0451180127.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+In+a+Lonely+Place"><img src="http://images.amazon.com/images/P/0446305340.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Asphalt+Jungle"><img src="http://images.amazon.com/images/P/0688031269.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Caged"><img src="http://images.amazon.com/images/P/0330362852.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sirocco"><img src="http://images.amazon.com/images/P/0373106831.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+To+Have+and+Have+Not"><img src="http://images.amazon.com/images/P/068471809X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Postman+Always+Rings+Twice"><img src="http://images.amazon.com/images/P/B000023VWR.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+
+<h2 id="9">Horror</h2>
+
+<a href="https://www.bing.com/search?q=movie+Pet+Sematary"><img src="http://images.amazon.com/images/P/0451162072.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Shining"><img src="http://images.amazon.com/images/P/0743424425.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Dracula"><img src="http://images.amazon.com/images/P/156619301X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+It"><img src="http://images.amazon.com/images/P/0450411435.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cujo"><img src="http://images.amazon.com/images/P/8878242357.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Dark+Half"><img src="http://images.amazon.com/images/P/0451167317.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Black+Cat"><img src="http://images.amazon.com/images/P/0812549325.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Carrie"><img src="http://images.amazon.com/images/P/0451157443.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Thinner"><img src="http://images.amazon.com/images/P/0451137965.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Demon+Seed"><img src="http://images.amazon.com/images/P/0425158594.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Haunting"><img src="http://images.amazon.com/images/P/0747258740.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Sentinel"><img src="http://images.amazon.com/images/P/0425188795.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Rosemary's+Baby"><img src="http://images.amazon.com/images/P/0451194004.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Dr.+Jekyll+and+Mr.+Hyde"><img src="http://images.amazon.com/images/P/0812504488.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Other"><img src="http://images.amazon.com/images/P/0440167361.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Pit+and+the+Pendulum"><img src="http://images.amazon.com/images/P/1860920195.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Exorcist"><img src="http://images.amazon.com/images/P/0061007226.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Empire+of+the+Ants"><img src="http://images.amazon.com/images/P/0553573527.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Omen"><img src="http://images.amazon.com/images/P/0451119894.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Fury"><img src="http://images.amazon.com/images/P/0061060992.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Howling"><img src="http://images.amazon.com/images/P/0449138240.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+I+Know+What+You+Did+Last+Summer"><img src="http://images.amazon.com/images/P/0440228441.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mary+Shelley's+Frankenstein"><img src="http://images.amazon.com/images/P/0451182847.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+30+Days+of+Night"><img src="http://images.amazon.com/images/P/0971977550.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Ruins"><img src="http://images.amazon.com/images/P/0814726852.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Believers"><img src="http://images.amazon.com/images/P/0451121198.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Food+of+the+Gods"><img src="http://images.amazon.com/images/P/0755104021.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Body+Parts"><img src="http://images.amazon.com/images/P/0843953179.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="10">Musical</h2>
+
+<a href="https://www.bing.com/search?q=movie+Huckleberry+Finn"><img src="http://images.amazon.com/images/P/8408003038.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Commitments"><img src="http://images.amazon.com/images/P/0749398019.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Gypsy"><img src="http://images.amazon.com/images/P/0821725017.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Connecticut+Yankee+in+King+Arthur's+Court"><img src="http://images.amazon.com/images/P/0812504364.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+High+Society"><img src="http://images.amazon.com/images/P/0552999954.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lost+Horizon"><img src="http://images.amazon.com/images/P/0671664271.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mary+Poppins"><img src="http://images.amazon.com/images/P/0152524088.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="11">Mystery</h2>
+<a href="https://www.bing.com/search?q=movie+Endless+Night"><img src="http://images.amazon.com/images/P/067170091X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Witness+for+the+Prosecution"><img src="http://images.amazon.com/images/P/0553350072.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ordeal+by+Innocence"><img src="http://images.amazon.com/images/P/006100278X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Naked+Face"><img src="http://images.amazon.com/images/P/0446341916.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Farewell,+My+Lovely"><img src="http://images.amazon.com/images/P/1590070917.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Poodle+Springs"><img src="http://images.amazon.com/images/P/042512343X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Long+Goodbye"><img src="http://images.amazon.com/images/P/0345257340.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Appointment+With+Death"><img src="http://images.amazon.com/images/P/0425098397.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Hopscotch"><img src="http://images.amazon.com/images/P/0449227472.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Maltese+Falcon"><img src="http://images.amazon.com/images/P/0865471576.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Mirror+Crack'd"><img src="http://images.amazon.com/images/P/0671706055.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="12">Other</h2>
+
+<a href="https://www.bing.com/search?q=movie+James+and+the+Giant+Peach"><img src="http://images.amazon.com/images/P/0375814248.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Jonathan+Livingston+Seagull"><img src="http://images.amazon.com/images/P/0380012863.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Noah"><img src="http://images.amazon.com/images/P/0842346996.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Outsider"><img src="http://images.amazon.com/images/P/0671774662.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Wild"><img src="http://images.amazon.com/images/P/0812512774.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Elvis+and+Me"><img src="http://images.amazon.com/images/P/0425091031.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sweet+Dreams"><img src="http://images.amazon.com/images/P/0061067202.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Immortal+Beloved"><img src="http://images.amazon.com/images/P/074725141X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bound+for+Glory"><img src="http://images.amazon.com/images/P/0452264456.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Other+Side+of+the+Mountain"><img src="http://images.amazon.com/images/P/0060809485.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Hoffa"><img src="http://images.amazon.com/images/P/0061006130.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Basketball+Diaries"><img src="http://images.amazon.com/images/P/0140249990.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lust+for+Life"><img src="http://images.amazon.com/images/P/0452262496.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Nijinsky"><img src="http://images.amazon.com/images/P/0140037829.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Infinity"><img src="http://images.amazon.com/images/P/0515126101.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Mommie+Dearest"><img src="http://images.amazon.com/images/P/0425052427.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Last+American+Hero"><img src="http://images.amazon.com/images/P/0595168477.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Beyond+the+Sea"><img src="http://images.amazon.com/images/P/0451408454.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cross+Creek"><img src="http://images.amazon.com/images/P/0020238207.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Magic+Fire"><img src="http://images.amazon.com/images/P/0671020579.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lady+Sings+the+Blues"><img src="http://images.amazon.com/images/P/8483105802.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Born+on+the+Fourth+of+July"><img src="http://images.amazon.com/images/P/007035359X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Charlie+Wilson's+War"><img src="http://images.amazon.com/images/P/0802141242.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lean+on+Me"><img src="http://images.amazon.com/images/P/1573452149.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Airport"><img src="http://images.amazon.com/images/P/0425176088.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Kid+Stays+in+the+Picture"><img src="http://images.amazon.com/images/P/0786860596.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Perks+of+Being+a+Wallflower"><img src="http://images.amazon.com/images/P/0671027344.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Spartacus"><img src="http://images.amazon.com/images/P/1873631545.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Something+Wicked+This+Way+Comes"><img src="http://images.amazon.com/images/P/0553236202.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Witches"><img src="http://images.amazon.com/images/P/0140340203.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Alice+in+Wonderland"><img src="http://images.amazon.com/images/P/1853261181.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Princess+Bride"><img src="http://images.amazon.com/images/P/1590071875.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Matter+of+Time"><img src="http://images.amazon.com/images/P/0394562879.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Seventh+Son"><img src="http://images.amazon.com/images/P/0747270422.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Lord+of+the+Rings"><img src="http://images.amazon.com/images/P/0395489326.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Somewhere+in+Time"><img src="http://images.amazon.com/images/P/0345331117.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Marjorie+Morningstar"><img src="http://images.amazon.com/images/P/0316955132.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Manchurian+Candidate"><img src="http://images.amazon.com/images/P/1568582706.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Spy+Who+Came+in+from+the+Cold"><img src="http://images.amazon.com/images/P/0345377370.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Eye+of+the+Needle"><img src="http://images.amazon.com/images/P/0380733358.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Avengers"><img src="http://images.amazon.com/images/P/0375705295.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Thor"><img src="http://images.amazon.com/images/P/0345384555.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Battle+Cry"><img src="http://images.amazon.com/images/P/0553259830.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Red+Badge+of+Courage"><img src="http://images.amazon.com/images/P/0812504798.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Thin+Red+Line"><img src="http://images.amazon.com/images/P/0385324081.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Hart's+War"><img src="http://images.amazon.com/images/P/034542624X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Great+Escape"><img src="http://images.amazon.com/images/P/0449001393.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Dogs+of+War"><img src="http://images.amazon.com/images/P/0553268465.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Von+Ryan's+Express"><img src="http://images.amazon.com/images/P/0451150066.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+For+Whom+the+Bell+Tolls"><img src="http://images.amazon.com/images/P/0684803356.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Young+Lions"><img src="http://images.amazon.com/images/P/0226751295.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Catch-22"><img src="http://images.amazon.com/images/P/044011120X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+King+Rat"><img src="http://images.amazon.com/images/P/0440145465.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+From+Here+to+Eternity"><img src="http://images.amazon.com/images/P/0385333641.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Midnight+Clear"><img src="http://images.amazon.com/images/P/0446606782.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+In+Harm's+Way"><img src="http://images.amazon.com/images/P/0694524352.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lonesome+Dove"><img src="http://images.amazon.com/images/P/067168390X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Little+Big+Man"><img src="http://images.amazon.com/images/P/0385298293.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Riders+of+the+Purple+Sage"><img src="http://images.amazon.com/images/P/0061010421.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Breakheart+Pass"><img src="http://images.amazon.com/images/P/0449202402.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Catlow"><img src="http://images.amazon.com/images/P/0553247670.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Valdez+Is+Coming"><img src="http://images.amazon.com/images/P/0380822237.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+True+Grit"><img src="http://images.amazon.com/images/P/0451160223.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Virginian"><img src="http://images.amazon.com/images/P/0812580400.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Last+Stand+at+Saber+River"><img src="http://images.amazon.com/images/P/0060013524.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Stay+Away,+Joe"><img src="http://images.amazon.com/images/P/0911436065.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Stalking+Moon"><img src="http://images.amazon.com/images/P/0843941804.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Tombstone"><img src="http://images.amazon.com/images/P/0451202937.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="13">Romance</h2>
+
+<a href="https://www.bing.com/search?q=movie+The+Notebook"><img src="http://images.amazon.com/images/P/0446605239.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Love+Story"><img src="http://images.amazon.com/images/P/0380017601.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Walk+to+Remember"><img src="http://images.amazon.com/images/P/0446608955.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Princess+Daisy"><img src="http://images.amazon.com/images/P/0553256092.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Oliver's+Story"><img src="http://images.amazon.com/images/P/0380018446.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Goodbye,+Columbus"><img src="http://images.amazon.com/images/P/055326365X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Host"><img src="http://images.amazon.com/images/P/0553289845.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<a href="https://www.bing.com/search?q=movie+What+to+Expect+When+You're+Expecting"><img src="http://images.amazon.com/images/P/0894807692.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Romantics"><img src="http://images.amazon.com/images/P/0812579305.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Something+Borrowed"><img src="http://images.amazon.com/images/P/0395816653.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Cocktail"><img src="http://images.amazon.com/images/P/0671664875.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Flipped"><img src="http://images.amazon.com/images/P/0375811745.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<a href="https://www.bing.com/search?q=movie+One+Day"><img src="http://images.amazon.com/images/P/024114132X.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="16">Science fiction</h2>
+<a href="https://www.bing.com/search?q=movie+Starship+Troopers"><img src="http://images.amazon.com/images/P/0441783589.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Contact"><img src="http://images.amazon.com/images/P/0505524996.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Andromeda+Strain"><img src="http://images.amazon.com/images/P/0345378482.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sphere"><img src="http://images.amazon.com/images/P/0345353145.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Time+Machine"><img src="http://images.amazon.com/images/P/0812505042.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Journey+to+the+Center+of+the+Earth"><img src="http://images.amazon.com/images/P/0140022651.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Giver"><img src="http://images.amazon.com/images/P/0440900794.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+I+Am+Legend"><img src="http://images.amazon.com/images/P/031286504X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Planet+of+the+Apes"><img src="http://images.amazon.com/images/P/0060937688.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Dune"><img src="http://images.amazon.com/images/P/0425080021.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Damnation+Alley"><img src="http://images.amazon.com/images/P/0743486625.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Men+in+Black"><img src="http://images.amazon.com/images/P/0425153797.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Battlefield+Earth"><img src="http://images.amazon.com/images/P/0884041557.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Lifeforce"><img src="http://images.amazon.com/images/P/0446326119.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+War+of+the+Worlds"><img src="http://images.amazon.com/images/P/0812505158.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Stand"><img src="http://images.amazon.com/images/P/0385121687.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Total+Recall"><img src="http://images.amazon.com/images/P/0380708744.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Lost+World:+Jurassic+Park"><img src="http://images.amazon.com/images/P/081181999X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+No+Escape"><img src="http://images.amazon.com/images/P/0060542144.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Invasion+of+the+Body+Snatchers"><img src="http://images.amazon.com/images/P/0440143179.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Minority+Report"><img src="http://images.amazon.com/images/P/2070426068.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bicentennial+Man"><img src="http://images.amazon.com/images/P/0449235734.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Congo"><img src="http://images.amazon.com/images/P/0345378490.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Handmaid's+Tale"><img src="http://images.amazon.com/images/P/0449212602.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Blade+Runner"><img src="http://images.amazon.com/images/P/0345301293.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Illustrated+Man"><img src="http://images.amazon.com/images/P/0380973847.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Stepford+Wives"><img src="http://images.amazon.com/images/P/0060080841.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Running+Man"><img src="http://images.amazon.com/images/P/0451151224.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Enemy+Mine"><img src="http://images.amazon.com/images/P/0441206727.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Island+of+Dr.+Moreau"><img src="http://images.amazon.com/images/P/0451191897.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Slaughterhouse-Five"><img src="http://images.amazon.com/images/P/0385333846.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+<h2 id="17">Suspense/Thriller</h2>
+
+<a href="https://www.bing.com/search?q=movie+The+Bourne+Identity"><img src="http://images.amazon.com/images/P/0553260111.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Psycho"><img src="http://images.amazon.com/images/P/0812519329.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Magic"><img src="http://images.amazon.com/images/P/0553290533.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Osterman+Weekend"><img src="http://images.amazon.com/images/P/0553264303.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Holcroft+Covenant"><img src="http://images.amazon.com/images/P/0553260197.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Flowers+in+the+Attic"><img src="http://images.amazon.com/images/P/0671452665.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Stranger+in+the+House"><img src="http://images.amazon.com/images/P/074342364X.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Sum+of+All+Fears"><img src="http://images.amazon.com/images/P/0425184226.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Dead+Zone"><img src="http://images.amazon.com/images/P/0451155750.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Fight+Club"><img src="http://images.amazon.com/images/P/0805062971.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bless+the+Child"><img src="http://images.amazon.com/images/P/0743405978.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Pelican+Brief"><img src="http://images.amazon.com/images/P/0440214041.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Misery"><img src="http://images.amazon.com/images/P/0451153553.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Intensity"><img src="http://images.amazon.com/images/P/0345384369.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Christine"><img src="http://images.amazon.com/images/P/0451139739.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Disclosure"><img src="http://images.amazon.com/images/P/0345391055.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Firestarter"><img src="http://images.amazon.com/images/P/0451132343.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+High+Crimes"><img src="http://images.amazon.com/images/P/0688149626.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Formula"><img src="http://images.amazon.com/images/P/0553138014.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Coma"><img src="http://images.amazon.com/images/P/0451082028.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Eye+of+the+Beholder"><img src="http://images.amazon.com/images/P/0671523074.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Island"><img src="http://images.amazon.com/images/P/0440206324.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Talented+Mr.+Ripley"><img src="http://images.amazon.com/images/P/0375405119.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+First+Deadly+Sin"><img src="http://images.amazon.com/images/P/0425104273.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Two+Faces+of+January"><img src="http://images.amazon.com/images/P/0871132095.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Topaz"><img src="http://images.amazon.com/images/P/0553235478.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Boys+from+Brazil"><img src="http://images.amazon.com/images/P/0553290045.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Marathon+Man"><img src="http://images.amazon.com/images/P/0345439724.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Silence+of+the+Lambs"><img src="http://images.amazon.com/images/P/0312195265.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Strangers+on+a+Train"><img src="http://images.amazon.com/images/P/0393321983.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Deep"><img src="http://images.amazon.com/images/P/0385047428.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Little+Drummer+Girl"><img src="http://images.amazon.com/images/P/0340733632.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Bringing+Out+the+Dead"><img src="http://images.amazon.com/images/P/0375400400.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Sliver"><img src="http://images.amazon.com/images/P/0553072927.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+A+Walk+Among+the+Tombstones"><img src="http://images.amazon.com/images/P/0380713756.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Left+Behind"><img src="http://images.amazon.com/images/P/1565073649.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Power"><img src="http://images.amazon.com/images/P/0330334743.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+The+Eiger+Sanction"><img src="http://images.amazon.com/images/P/0345317378.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Ben-Hur"><img src="http://images.amazon.com/images/P/1587155389.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Half+Moon+Street"><img src="http://images.amazon.com/images/P/0671607758.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+Jaws"><img src="http://images.amazon.com/images/P/0449219631.01.MZZZZZZZ.jpg "style="width:150"></a>
+<a href="https://www.bing.com/search?q=movie+52+Pick-Up"><img src="http://images.amazon.com/images/P/0380654903.01.MZZZZZZZ.jpg "style="width:150"></a>
+
+</body>
+</html>

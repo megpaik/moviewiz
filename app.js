@@ -9,6 +9,7 @@ var search = require('./routes/search');
 var register = require('./routes/register');
 var logout = require('./routes/logout');
 var advanced = require('./routes/advanced');
+var bing = require('./routes/bing');
 
 app.engine('html', require('ejs').__express);
 app.set('view engine', 'html');
@@ -38,6 +39,7 @@ app.use('/', browse);
 app.use('/', search);
 app.use('/', logout);
 app.use('/', advanced);
+app.use('/', bing);
 
 app.listen(app.get('port'), function () {
   console.log('Magic happens on port '+ app.get('port'));

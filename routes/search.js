@@ -43,7 +43,7 @@ function getSQL(category, query) {
       return temp;
       break;
     case 'director':
-      var temp = "SELECT * FROM ((SELECT nconst FROM Names WHERE primaryName='" + query + "') as n JOIN (SELECT * FROM Directors) as w ON n.nconst = w.nconst)";
+      var temp = "Select distinct movies.primaryTitle from Directors join movies on Directors.tconst = movies.tconst join names on names.nconst = Directors.directors where primaryName ='"+ query + "'";
       return temp;
       break;
     case 'actor':
@@ -51,7 +51,7 @@ function getSQL(category, query) {
       return temp;
       break;
     case 'genre':
-      var temp = "SELECT * FROM Genres WHERE genres.y ='" + query + "'";
+      var temp = "SELECT distinct movies.primaryTitle, movies.startYear FROM genres join movies on genres.tconst = movies.tconst WHERE genres = '" + query + "'";
       return temp;
       break;
     case 'year':

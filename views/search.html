@@ -9,13 +9,26 @@
   </head>
 <body>
     <div class="container">
-      <div class="nav flex flexrow">
-        <div class="logo">moviewiz</div>
-        <form action="/search">
-          <input class="searchbar" type="text"/>
-          <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
-        </form>
-      </div>
+        <div class="nav flex flexrow">
+          <div class="logo"><a href="/browse" id="home">moviewiz</a></div>
+            <div class="flex flexrow">
+            <div class="flex flexcol">
+            <form method="POST" action="/search">
+              <select name="category">
+                <option value="title">Title</option>
+                <option value="director">Director</option>
+                <option value="actor">Actor</option>
+                <option value="genre">Genre</option>
+                <option value="year">Year</option>
+              </select>
+              <input class="searchbar" name="field" type="text"/>
+              <button type="submit" class='search-btn'><i class="fas fa-search"></i></button>
+            </form>
+            <div class="advsearch"><a href="/advanced" id="advsearch">advanced search</a></div>
+          </div>  
+          <button class='logout'><a href='/logout'><i class="fas fa-sign-out-alt"></i></a></button>
+          </div>
+        </div>
       <div class="title">Search Results</div>
     <div class="search-container">
       <div class="search-list flex flexrow"></div>
